@@ -1,2 +1,2 @@
 import sys
-from sqlalchemy import Column, ForeignKey
+from sqlalchemy import Column, ForeignKey, Integer
