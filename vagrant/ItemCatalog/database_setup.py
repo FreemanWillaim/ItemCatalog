@@ -26,3 +26,4 @@ class ProduceItem(Base):
 	name =Column(String(80), nullable = False)
 	id = Column(Integer, primary_key = True)
 	description = Column(String(250))
+	price = Column(String(8))
