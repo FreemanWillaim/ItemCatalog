@@ -13,3 +13,4 @@ class Store(Base):
 	name = Column(String(250), nullable=False)
 	
 class Produce(Base):
+	__tablename__ = 'produce'
