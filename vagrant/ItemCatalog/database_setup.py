@@ -17,3 +17,4 @@ class Produce(Base):
 	
 	id = Column(Integer, primary_key=True)
 	name = Column(String(250), nullable=False)
+	Store_id = Column(Integer,ForeignKey('store.id'))
