@@ -14,3 +14,5 @@ class Store(Base):
 	
 class Produce(Base):
 	__tablename__ = 'produce'
+	
+	id = Column(Integer, primary_key=True)
