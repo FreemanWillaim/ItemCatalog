@@ -30,3 +30,17 @@ class ProduceItem(Base):
 	type = Column(String(250))
 	produce_id = Column(Integer,ForeignKey('produce.id'))
 	produce = relationship(Produce)
+	
+	@property
+	def serialize(self):
+       
+		return {
+           'name'         : self.name,
+           'description'         : self.description,
+           'id'         : self.id,
+           'price'         : self.price,
+           'type'         : self.type,
+       }
+	   
+
+	   
