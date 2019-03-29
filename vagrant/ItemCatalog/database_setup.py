@@ -43,4 +43,6 @@ class ProduceItem(Base):
        }
 	   
 engine = create_engine('sqlite:///producemenu.db')
+
+Base.metadata.create_all(engine)
 	   
