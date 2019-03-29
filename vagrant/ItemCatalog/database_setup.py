@@ -8,3 +8,5 @@ Base = declarative_base()
 
 class Store(Base):
 	__tablename__='store'
+	
+	id = Column(Integer, primary_key=True)
