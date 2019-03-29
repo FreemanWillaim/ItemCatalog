@@ -21,3 +21,4 @@ class Produce(Base):
 	store = relationship(Store) 
 	
 class ProduceItem(Base):
+	__tablename__ = 'menu_item'
